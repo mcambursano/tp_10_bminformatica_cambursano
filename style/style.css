@@ -1,0 +1,499 @@
+/* MEDIA QUERIES */
+* {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+/************************
+        DESKTOP
+*************************/
+@media (max-width: 4096px) {
+  header, nav, footer {
+    padding: 15px;
+  }
+
+  #gridAreaIndex {
+    display: grid;
+    grid-template-areas: "cabeza menu menu" "productos productos productos" "pie pie pie";
+    grid-template-columns: 20% auto auto;
+    grid-template-rows: auto 4fr 0fr;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+  }
+
+  header {
+    grid-area: cabeza;
+  }
+
+  footer {
+    grid-area: pie;
+    background-color: gray;
+    padding: 20px 25px 20px 25px;
+  }
+
+  #productos {
+    grid-area: productos;
+    height: 100%;
+  }
+
+  #servicios {
+    grid-area: servicios;
+  }
+
+  nav {
+    grid-area: menu;
+  }
+
+  #gridAreaFooter {
+    display: grid;
+    grid-template-areas: "texto datos mapa";
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 2fr;
+    grid-column-gap: 5px;
+  }
+
+  .textoInfo {
+    grid-area: texto;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .textContacto {
+    grid-area: datos;
+  }
+
+  .mapaFooter {
+    grid-area: mapa;
+  }
+
+  .mapaW {
+    width: 100%;
+  }
+
+  .destacado {
+    height: 100%;
+    text-align: right;
+    color: #272e3c;
+    background: url("../../img/slider.png");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+  .destacado h2 {
+    color: white;
+    padding: 25px 50px;
+    font-weight: bold;
+    font-size: 3rem;
+  }
+  .destacado p {
+    text-align: justify;
+    font-weight: normal;
+    font-size: 1, 1rem;
+    color: white;
+    margin: 25px 50px 50px auto;
+    width: 30%;
+  }
+
+  .imgLogo {
+    width: 100%;
+  }
+
+  footer p {
+    margin-bottom: 0;
+  }
+
+  .medioM {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .sinItems {
+    list-style-type: none;
+  }
+
+  .textoImgNosotros {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 25px 10% 25px 10%;
+  }
+  .textoImgNosotros p {
+    padding: 10px 50px 10px 50px;
+    width: 50%;
+    text-align: justify;
+  }
+  .textoImgNosotros img {
+    width: 60vh;
+  }
+
+  .listaNosotros {
+    padding: 25px 0 25px 0;
+    padding-bottom: 20px;
+  }
+  .listaNosotros div li {
+    border: none;
+  }
+
+  .texto2Nosotros {
+    padding: 25px 20% 25px 20%;
+  }
+}
+/************************
+        TABLET
+************************/
+@media (max-width: 991px) {
+  #gridAreaIndex {
+    display: grid;
+    grid-template-areas: "cabeza cabeza" "menu menu" "productos productos" "pie pie";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto 2.5fr auto;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+  }
+
+  #gridAreaFooter {
+    display: grid;
+    grid-template-areas: "texto" "datos" "mapa";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+  }
+
+  .destacado {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .destacado h2 {
+    font-size: 2.5rem;
+  }
+  .destacado p {
+    font-size: 1rem;
+    width: 60%;
+  }
+
+  .imgLogo {
+    width: 50%;
+  }
+
+  .textoImgNosotros {
+    padding: 15px 5% 15px 5%;
+    flex-direction: column-reverse;
+  }
+  .textoImgNosotros img {
+    padding: 10px 0 10px 0;
+  }
+  .textoImgNosotros p {
+    padding: 10px 25px 10px 25px;
+    width: 80%;
+  }
+
+  .texto2Nosotros {
+    padding: 15px 10% 15px 10%;
+    text-align: justify;
+  }
+}
+/************************
+        SMARTPHONE
+*************************/
+@media (max-width: 479px) {
+  #gridAreaIndex {
+    display: grid;
+    grid-template-areas: "cabeza" "menu" "productos" "pie";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto;
+  }
+
+  #gridAreaFooter {
+    display: grid;
+    grid-template-areas: "texto" "datos" "mapa";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+  }
+
+  .destacado h2 {
+    font-size: 2rem;
+  }
+  .destacado p {
+    font-size: 0.9rem;
+    color: white;
+    width: 80%;
+  }
+
+  .imgLogo {
+    width: 70%;
+  }
+
+  .textoImgNosotros p {
+    padding: 10px 5% 10px 5%;
+  }
+}
+/* MEDIA QUERIES */
+* {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+/************************
+        DESKTOP
+*************************/
+@media (max-width: 4096px) {
+  header, nav, footer {
+    padding: 15px;
+  }
+
+  #gridAreaIndex {
+    display: grid;
+    grid-template-areas: "cabeza menu menu" "productos productos productos" "pie pie pie";
+    grid-template-columns: 20% auto auto;
+    grid-template-rows: 0.2fr 4fr 0.5fr;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+  }
+
+  header {
+    grid-area: cabeza;
+  }
+
+  footer {
+    grid-area: pie;
+    background-color: #c7c7c7;
+    padding: 20px 25px 20px 25px;
+  }
+
+  #productos {
+    grid-area: productos;
+    height: 100%;
+  }
+
+  #servicios {
+    grid-area: servicios;
+  }
+
+  nav {
+    grid-area: menu;
+  }
+
+  #gridAreaFooter {
+    display: grid;
+    grid-template-areas: "texto datos mapa";
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 2fr;
+    grid-column-gap: 5px;
+  }
+
+  .textoInfo {
+    grid-area: texto;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .textContacto {
+    grid-area: datos;
+  }
+
+  .mapaFooter {
+    grid-area: mapa;
+  }
+
+  .mapaW {
+    width: 100%;
+  }
+
+  .destacado {
+    height: 100%;
+    text-align: right;
+    color: #272e3c;
+    background: url("../../img/slider.png");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+  }
+  .destacado h2 {
+    color: white;
+    padding: 25px 50px;
+    font-weight: bold;
+    font-size: 3rem;
+  }
+  .destacado p {
+    text-align: justify;
+    font-weight: normal;
+    font-size: 1, 1rem;
+    color: white;
+    margin: 25px 50px 50px auto;
+    width: 30%;
+  }
+
+  .imgLogo {
+    width: 100%;
+  }
+
+  footer p {
+    margin-bottom: 0;
+  }
+
+  .medioM {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .sinItems {
+    list-style-type: none;
+  }
+
+  .textoImgNosotros {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 25px 10% 25px 10%;
+  }
+  .textoImgNosotros p {
+    padding: 10px 50px 10px 50px;
+    width: 50%;
+    text-align: justify;
+  }
+  .textoImgNosotros img {
+    width: 60vh;
+  }
+
+  .listaNosotros {
+    padding: 25px 0 25px 0;
+    padding-bottom: 20px;
+  }
+  .listaNosotros div li {
+    border: none;
+  }
+
+  .texto2Nosotros {
+    padding: 25px 20% 25px 20%;
+  }
+
+  .formulario1 {
+    padding: 5% 20% 0 20%;
+  }
+  .formulario1 h2 {
+    padding-bottom: 5%;
+  }
+
+  .clienteBox {
+    background-color: #194D8C;
+    color: #c3c3c3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .clienteBox div div h2 {
+    padding-bottom: 10%;
+  }
+}
+/************************
+        TABLET
+************************/
+@media (max-width: 991px) {
+  #gridAreaIndex {
+    display: grid;
+    grid-template-areas: "cabeza cabeza" "menu menu" "productos productos" "pie pie";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 0fr 0fr 1fr 0fr;
+  }
+
+  #gridAreaFooter {
+    display: grid;
+    grid-template-areas: "texto" "datos" "mapa";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+  }
+
+  .destacado {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .destacado h2 {
+    font-size: 2.5rem;
+  }
+  .destacado p {
+    font-size: 1rem;
+    width: 60%;
+  }
+
+  .imgLogo {
+    width: 50%;
+  }
+
+  .textoImgNosotros {
+    padding: 15px 5% 15px 5%;
+    flex-direction: column-reverse;
+  }
+
+  .textoImgNosotros img {
+    padding: 10px 0 10px 0;
+  }
+
+  .textoImgNosotros p {
+    padding: 10px 25px 10px 25px;
+    width: 80%;
+  }
+
+  .texto2Nosotros {
+    padding: 15px 10% 15px 10%;
+    text-align: justify;
+  }
+
+  .formulario1 {
+    padding: 5px 15% 5px 15%;
+  }
+
+  .textoInfoP {
+    text-align: center;
+    font-weight: bold;
+  }
+}
+/************************
+        SMARTPHONE
+*************************/
+@media (max-width: 479px) {
+  #gridAreaIndex {
+    display: grid;
+    grid-template-areas: "cabeza" "menu" "productos" "pie";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto;
+  }
+
+  #gridAreaFooter {
+    display: grid;
+    grid-template-areas: "texto" "datos" "mapa";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+  }
+
+  .destacado h2 {
+    font-size: 2rem;
+  }
+
+  .destacado p {
+    font-size: 0.9rem;
+    color: white;
+    width: 80%;
+  }
+
+  .imgLogo {
+    width: 70%;
+  }
+
+  .textoImgNosotros p {
+    padding: 10px 0 10px 0;
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
